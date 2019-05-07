@@ -35,7 +35,6 @@ class Miko_Wrapper(object):
 	return "USERNAME={}\nPASSWORD={}\nHOSTNAME={}\nAUTO_ADD_KEYS={}".format(
 		self.username, "REDACTED", self.host, self.auto_add_keys)
 
-
 def single_shot(*commands, **creds):
     if 'username' not in creds.keys():
 	creds['username'] = getpass.getuser()
